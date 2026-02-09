@@ -46,7 +46,7 @@
       <div class="sub">Result Details</div>
 
       <div class="box highlight">
-        <h3>🏆 Topper of the Test</h3>
+        <h3>🏆 Top 3 Performers of the Day</h3>
         <p id="topperInfo"></p>
       </div>
 
@@ -55,7 +55,6 @@
         <table>
           <tr><th>Name</th><td id="name"></td></tr>
           <tr><th>Roll No</th><td id="rollShow"></td></tr>
-          <tr><th>Category</th><td id="category"></td></tr>
           <tr><th>Rank</th><td id="rank"></td></tr>
           <tr><th>Percentile</th><td id="percentile"></td></tr>
           <tr><th>Accuracy</th><td id="accuracy"></td></tr>
@@ -66,11 +65,11 @@
         <h3>Marks (with Subject-wise Cut-offs)</h3>
         <table>
           <tr><th>Subject</th><th>Marks</th><th>Cut-off</th></tr>
-          <tr><td>The Hindu Editorial</td><td id="hindu"></td><td id="cut_hindu"></td></tr>
-          <tr><td>Current Affairs</td><td id="ca"></td><td id="cut_ca"></td></tr>
-          <tr><td>Descriptive Writing</td><td id="desc"></td><td id="cut_desc"></td></tr>
           <tr><td>Weekly The Hindu Editorial</td><td id="weeklyH"></td><td id="cut_weeklyH"></td></tr>
           <tr><td>Weekly Current Affairs</td><td id="weeklyCA"></td><td id="cut_weeklyCA"></td></tr>
+          <tr><td>The Hindu Editorial (09/02/2026)</td><td id="hindu"></td><td id="cut_hindu"></td></tr>
+          <tr><td>Current Affairs (09/02/2026)</td><td id="ca"></td><td id="cut_ca"></td></tr>
+          <tr><td>Descriptive Writing (09/02/2026)</td><td id="desc"></td><td id="cut_desc"></td></tr>
         </table>
         <div class="note">* indicates sectional cut-off not cleared</div>
       </div>
@@ -85,6 +84,7 @@
       </div>
 
       <button class="btn" onclick="downloadMarksheet()">📥 Download Marksheet</button>
+      <button class="btn" id="certBtn" style="display:none" onclick="downloadCertificate()">🏅 Download Certificate</button>
       <button class="btn secondary" onclick="logout()">Logout</button>
     </div>
 
